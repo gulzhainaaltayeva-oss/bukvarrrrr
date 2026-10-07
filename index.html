@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Тез оқу сағаты · Әліппе · 6–10 жас</title>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff8e6;--ink:#10304a;--card:#ffffff;--sky:#00afca;--sun:#ffc20e;--line:#10304a;--soft:#e3f6fa;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f2233;--ink:#fdf3d6;--card:#173247;--line:#fdf3d6;--soft:#1d4157}}
+:root[data-theme="dark"]{--bg:#0f2233;--ink:#fdf3d6;--card:#173247;--line:#fdf3d6;--soft:#1d4157}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Fira Sans",Arial,sans-serif;font-size:20px;line-height:1.5}
+main{max-width:860px;margin:0 auto;padding:16px}
+header{text-align:center;padding:20px 8px}
+h1{font-size:clamp(30px,6vw,48px);margin:0;font-weight:800;line-height:1.1}
+header p{margin:8px 0 0}
+.plan{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;margin:14px 0 0;padding:0;list-style:none;font-size:15px}
+.plan li{background:var(--sun);color:#10304a;border-radius:20px;padding:4px 12px;font-weight:600}
+section{background:var(--card);border:3px solid var(--line);border-radius:22px;padding:18px;margin:18px 0}
+h2{margin:0 0 4px;font-size:26px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.min{background:var(--sky);color:#fff;border-radius:14px;padding:2px 12px;font-size:16px}
+.how{margin:0 0 12px;font-size:17px;opacity:.85}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--soft);border-radius:14px;padding:6px 14px;font-weight:800;font-size:28px;min-width:56px;text-align:center}
+.pic{display:flex;flex-direction:column;align-items:center;background:var(--soft);border-radius:16px;padding:8px 12px;min-width:104px}
+.pic b{font-size:44px;line-height:1.1}
+.pic span{font-weight:800;font-size:24px}
+.ladder{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;max-width:520px}
+.ladder div{background:var(--soft);border-radius:12px;text-align:center;font-weight:800;font-size:28px;padding:6px 0}
+.ladder .h{background:var(--sun);color:#10304a}
+.sent{margin:0;padding:0;list-style:none}
+.sent li{display:flex;gap:12px;align-items:center;padding:8px 0;border-bottom:2px dashed var(--soft);font-size:26px;font-weight:600}
+.sent li b{font-size:38px}
+.tbl{width:100%;border-collapse:collapse;margin-top:12px;font-size:17px}
+.tbl td,.tbl th{border:2px solid var(--line);padding:8px;text-align:center}
+.timer{display:flex;gap:10px;align-items:center;margin-top:10px;flex-wrap:wrap}
+button{font:inherit;font-weight:800;background:var(--sun);color:#10304a;border:3px solid #10304a;border-radius:14px;padding:6px 18px;cursor:pointer}
+button:focus-visible{outline:4px solid var(--sky);outline-offset:2px}
+#t{font-size:34px;font-weight:800;min-width:90px}
+.join{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:8px 0;font-size:26px;font-weight:800}
+.join i{font-style:normal;background:var(--soft);border-radius:10px;padding:2px 12px}
+.join .a{font-size:36px}
+.line{display:inline-block;min-width:130px;border-bottom:3px solid var(--line)}
+.story{background:var(--soft);border-radius:16px;padding:14px 18px;font-size:26px;line-height:1.6}
+ol.q{font-size:21px;padding-left:26px}
+.stars{font-size:34px;letter-spacing:6px;cursor:pointer;user-select:none}
+.cert{text-align:center;background:var(--sun);color:#10304a;border:3px dashed #10304a;border-radius:22px;padding:20px}
+.cert h2{justify-content:center}
+.note{font-size:15px;opacity:.85;text-align:center}
+.say{cursor:pointer;transition:background .15s}
+.say:hover{outline:3px solid var(--sky)}
+.say:focus-visible{outline:4px solid var(--sky)}
+.say.on{background:var(--sun)!important;color:#10304a}
+.hint{display:inline-block;background:var(--sky);color:#fff;border-radius:20px;padding:4px 16px;font-weight:600;font-size:17px;margin-top:10px}
+@media print{.hint{display:none}body{background:#fff;color:#000;font-size:16px}section{break-inside:avoid;border-color:#000}button,.timer{display:none}}
+@media (max-width:560px){body{font-size:18px}.chip{font-size:24px}.sent li{font-size:22px}.story{font-size:22px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>🚀 Тез оқу сағаты</h1>
+<p>Әліппе · Қазақ тілі · 6–10 жас · 60 минут</p>
+<ul class="plan"><li>1 Жылыту 10′</li><li>2 Буын 10′</li><li>3 Сөз 10′</li><li>4 Сөйлем 10′</li><li>5 Ойын 10′</li><li>6 Әңгіме 10′</li></ul>
+</header>
+
+<section>
+<h2>🔥 1. Жылыту <span class="min">10 минут</span></h2>
+<p class="how">Әр әріпті дауыстап оқы. Алдымен баяу, содан кейін тез! Үлкен әріптерді созып, кішілерін қысқа айт.</p>
+<div class="row"><span class="chip">А</span><span class="chip">Ә</span><span class="chip">О</span><span class="chip">Ө</span><span class="chip">Ұ</span><span class="chip">Ү</span><span class="chip">Ы</span><span class="chip">І</span><span class="chip">Е</span><span class="chip">И</span></div>
+<p class="how" style="margin-top:14px">🎯 Тілді жаттықтыр. Үш рет айт:</p>
+<div class="story">🐦‍⬛ Қара қарға қарқ-қарқ етті.</div>
+<p class="how" style="margin-top:12px">Мұғалім әріпті айтады — сен табасың және қолыңды көтересің!</p>
+</section>
+
+<section>
+<h2>🪜 2. Буын баспалдағы <span class="min">10 минут</span></h2>
+<p class="how">Баспалдақпен жоғары көтеріл. Әр қатарды 3 рет оқы: баяу, орташа, жылдам.</p>
+<div class="ladder">
+<div class="h">ма</div><div>мә</div><div>мо</div><div>мұ</div><div>мы</div>
+<div class="h">ба</div><div>бә</div><div>бо</div><div>бұ</div><div>бы</div>
+<div class="h">та</div><div>тә</div><div>то</div><div>тұ</div><div>ты</div>
+<div class="h">ла</div><div>лә</div><div>ло</div><div>лұ</div><div>лы</div>
+</div>
+<p class="how" style="margin-top:14px">⭐ Екі буынды сөздер:</p>
+<div class="row"><span class="chip">ана</span><span class="chip">ата</span><span class="chip">алма</span><span class="chip">бала</span><span class="chip">қала</span><span class="chip">тау</span></div>
+</section>
+
+<section>
+<h2>🖼️ 3. Суретті тап <span class="min">10 минут</span></h2>
+<p class="how">Суретке қарап сөзді оқы. Сосын сөзді жауып, суретке қарап өзің ата!</p>
+<div class="row">
+<div class="pic"><b>🍎</b><span>алма</span></div>
+<div class="pic"><b>🐱</b><span>мысық</span></div>
+<div class="pic"><b>🏠</b><span>үй</span></div>
+<div class="pic"><b>🌞</b><span>күн</span></div>
+<div class="pic"><b>🐟</b><span>балық</span></div>
+<div class="pic"><b>🚗</b><span>көлік</span></div>
+<div class="pic"><b>🐄</b><span>сиыр</span></div>
+<div class="pic"><b>🌳</b><span>ағаш</span></div>
+<div class="pic"><b>📚</b><span>кітап</span></div>
+<div class="pic"><b>🐴</b><span>жылқы</span></div>
+</div>
+<p class="how" style="margin-top:14px">✏️ Тапсырма: сурет пен сөзді сызықпен қос.</p>
+<div class="join"><i class="a">🍎</i> ——— <i>үй</i> &nbsp;&nbsp; <i class="a">🏠</i> ——— <i>алма</i> &nbsp;&nbsp; <i class="a">🐟</i> ——— <i>балық</i></div>
+</section>
+
+<section>
+<h2>⏱️ 4. Тез сөйлем <span class="min">10 минут</span></h2>
+<p class="how">Сөйлемдерді оқы және секундомерді қос. 3 рет оқы — әр жолы жылдамырақ болсын!</p>
+<ul class="sent">
+<li><b>👩</b> Ана нан пісірді.</li>
+<li><b>📖</b> Бала кітап оқиды.</li>
+<li><b>🐱</b> Мысық сүт ішті.</li>
+<li><b>🌞</b> Күн шықты. Құс ән салды.</li>
+<li><b>👴</b> Атам ағаш отырғызды.</li>
+<li><b>🏫</b> Біз мектепке барамыз.</li>
+</ul>
+<div class="timer"><span id="t">0.0</span><button id="go" type="button">▶ Бастау</button><button id="rs" type="button">↺ Қайта</button></div>
+<table class="tbl"><tr><th></th><th>1-рет</th><th>2-рет</th><th>3-рет</th></tr><tr><td>Секунд</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table>
+<p class="how">Нәтиже әр жолы жақсарса — сен жеңімпазсың! 🏆</p>
+</section>
+
+<section>
+<h2>🧩 5. Сөз құрастыр <span class="min">10 минут</span></h2>
+<p class="how">Екі буынды қос да, сөзді оқы. Сурет сөздің қандай екенін айтады.</p>
+<div class="join"><i>ба</i> + <i>лық</i> = <span class="line"></span> <span class="a">🐟</span></div>
+<div class="join"><i>қа</i> + <i>лам</i> = <span class="line"></span> <span class="a">✏️</span></div>
+<div class="join"><i>кі</i> + <i>тап</i> = <span class="line"></span> <span class="a">📚</span></div>
+<div class="join"><i>ал</i> + <i>ма</i> = <span class="line"></span> <span class="a">🍎</span></div>
+<div class="join"><i>мек</i> + <i>теп</i> = <span class="line"></span> <span class="a">🏫</span></div>
+<div class="join"><i>жыл</i> + <i>қы</i> = <span class="line"></span> <span class="a">🐴</span></div>
+<p class="how" style="margin-top:12px">🎲 Команда ойыны: бір бала буынды айтады, екіншісі жалғастырып сөзді толықтырады.</p>
+</section>
+
+<section>
+<h2>📖 6. Менің әңгімем <span class="min">10 минут</span></h2>
+<p class="how">Мәтінді бір рет баяу, бір рет жылдам оқы. Сосын сұрақтарға жауап бер.</p>
+<div class="story"><b>🐱 Асқар мен Айжан</b><br>Асқар мен Айжан достар. Олар мектепте оқиды. Бүгін олар саябаққа барды. Қара мысық көрді. Айжан мысыққа сүт берді. Мысық қуанды.</div>
+<ol class="q">
+<li>Достар кім?</li>
+<li>Олар қайда барды?</li>
+<li>Айжан мысыққа не берді?</li>
+</ol>
+<p>🎨 Әңгімеге сурет сал:</p>
+<div style="height:120px;border:3px dashed var(--line);border-radius:16px"></div>
+</section>
+
+<div class="cert">
+<h2>🏅 Сен — тез оқушысың!</h2>
+<p>Бүгінгі сабақты қалай бағалайсың? Жұлдызды бас:</p>
+<div class="stars" id="st" role="group" aria-label="Баға"><span data-n="1">☆</span><span data-n="2">☆</span><span data-n="3">☆</span><span data-n="4">☆</span><span data-n="5">☆</span></div>
+<p>Аты-жөні: <span class="line" style="min-width:220px"></span></p>
+</div>
+<p class="note">Мұғалімге: оқу жылдамдығы — минутына 20–30 сөз (6–7 жас), 40–60 сөз (8–10 жас). Баланы басқалармен емес, өзінің өткен нәтижесімен салыстырыңыз.</p>
+</main>
+<script>
+(function(){
+var t=document.getElementById('t'),go=document.getElementById('go'),rs=document.getElementById('rs'),iv=null,s=0;
+function show(){t.textContent=((Date.now()-s)/1000).toFixed(1)}
+go.addEventListener('click',function(){
+if(iv){clearInterval(iv);iv=null;go.textContent='▶ Бастау';return}
+s=Date.now();iv=setInterval(show,100);go.textContent='⏹ Тоқта'});
+rs.addEventListener('click',function(){clearInterval(iv);iv=null;t.textContent='0.0';go.textContent='▶ Бастау'});
+var sp=document.querySelectorAll('#st span');
+sp.forEach(function(e){e.addEventListener('click',function(){
+var n=+e.dataset.n;sp.forEach(function(x){x.textContent=(+x.dataset.n<=n)?'⭐':'☆'})})});
+
+})();
+</script>
+</body>
+</html>
